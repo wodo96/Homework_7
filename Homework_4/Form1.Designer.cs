@@ -45,6 +45,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
@@ -52,6 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -68,7 +70,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(338, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(675, 472);
+            this.pictureBox1.Size = new System.Drawing.Size(675, 278);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -155,7 +157,7 @@
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(338, 490);
+            this.textBox4.Location = new System.Drawing.Point(338, 296);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
@@ -167,7 +169,7 @@
             // textBox5
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(338, 519);
+            this.textBox5.Location = new System.Drawing.Point(338, 325);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(168, 16);
@@ -178,7 +180,7 @@
             // textBox6
             // 
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Location = new System.Drawing.Point(338, 548);
+            this.textBox6.Location = new System.Drawing.Point(338, 354);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(168, 16);
@@ -189,7 +191,7 @@
             // textBox7
             // 
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Location = new System.Drawing.Point(338, 577);
+            this.textBox7.Location = new System.Drawing.Point(338, 383);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(168, 16);
@@ -201,7 +203,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.pictureBox2.Enabled = false;
-            this.pictureBox2.Location = new System.Drawing.Point(512, 525);
+            this.pictureBox2.Location = new System.Drawing.Point(512, 331);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(98, 10);
             this.pictureBox2.TabIndex = 13;
@@ -212,7 +214,7 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Red;
             this.pictureBox3.Enabled = false;
-            this.pictureBox3.Location = new System.Drawing.Point(512, 554);
+            this.pictureBox3.Location = new System.Drawing.Point(512, 360);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(98, 10);
             this.pictureBox3.TabIndex = 14;
@@ -223,7 +225,7 @@
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Purple;
             this.pictureBox4.Enabled = false;
-            this.pictureBox4.Location = new System.Drawing.Point(512, 583);
+            this.pictureBox4.Location = new System.Drawing.Point(512, 389);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(98, 10);
             this.pictureBox4.TabIndex = 15;
@@ -238,18 +240,12 @@
             this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(115, 23);
             this.textBox8.TabIndex = 16;
-            this.textBox8.Text = "Success probability";
+            this.textBox8.Text = "Lambda";
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.DecimalPlaces = 2;
-            this.numericUpDown3.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            131072});
             this.numericUpDown3.Location = new System.Drawing.Point(208, 124);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.numericUpDown3.Minimum = new decimal(new int[] {
             1,
             0,
             0,
@@ -258,17 +254,26 @@
             this.numericUpDown3.Size = new System.Drawing.Size(66, 23);
             this.numericUpDown3.TabIndex = 17;
             this.numericUpDown3.Value = new decimal(new int[] {
-            50,
+            1,
             0,
             0,
-            131072});
+            0});
             this.numericUpDown3.ValueChanged += new System.EventHandler(this.numericUpDown3_ValueChanged);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Location = new System.Drawing.Point(338, 405);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(675, 231);
+            this.pictureBox5.TabIndex = 18;
+            this.pictureBox5.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 648);
+            this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.numericUpDown3);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.pictureBox4);
@@ -295,6 +300,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,5 +325,6 @@
         private PictureBox pictureBox4;
         private TextBox textBox8;
         private NumericUpDown numericUpDown3;
+        private PictureBox pictureBox5;
     }
 }
